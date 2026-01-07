@@ -1,2 +1,1 @@
-# teste2
-teste
+-- Tela congelada falsa (somente no cliente) local player = game.Players.LocalPlayer  local gui = Instance.new("ScreenGui") gui.Name = "FakeFreeze" gui.ResetOnSpawn = false gui.Parent = player:WaitForChild("PlayerGui")  local frame = Instance.new("Frame") frame.Size = UDim2.fromScale(1, 1) frame.BackgroundColor3 = Color3.new(0, 0, 0) frame.Parent = gui  local text = Instance.new("TextLabel") text.Size = UDim2.fromScale(1, 1) text.BackgroundTransparency = 1 text.Text = "Roblox parou de responder" text.TextColor3 = Color3.new(1, 1, 1) text.TextScaled = true text.Font = Enum.Font.SourceSansBold text.Parent = frame
